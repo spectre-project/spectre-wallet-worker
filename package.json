@@ -14,12 +14,13 @@
   "license": "ISC",
   "scripts": {
     "watch": "tsc --watch",
-    "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install --also=dev && tsc"
+    "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install --also=dev && tsc",
+    "prepare": "tsc"
   },
   "dependencies": {
     "@aspectron/flow-logger": ">=1.0.1",
     "@aspectron/web-worker": "^1.0.0",
-    "@spectre/wallet": "file:../spectre-wallet"
+    "@spectre/wallet": "github:spectre-project/spectre-wallet"
   },
   "devDependencies": {
     "@types/node": "^14.14.9",
